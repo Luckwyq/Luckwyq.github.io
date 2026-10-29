@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="王雅琪（Yaqi Wang），东北大学博士研究生。研究方向为学习型索引、度量空间相似性检索和查询感知数据管理。">
+  <meta property="og:title" content="Yaqi Wang's Homepage">
+  <meta property="og:description" content="Learned indexes, similarity search in metric spaces, and query-aware data management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luckwyq.github.io/">
+  <link rel="canonical" href="https://luckwyq.github.io/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/works.js" defer></script>
+  <script src="/app.js" defer></script>
+  <title>Yaqi Wang's Homepage</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳转到正文</a>
+  <div class="page" id="top">
+    <header>
+      <h1 data-i18n="welcome">欢迎访问王雅琪的个人主页</h1>
+      <div class="profile">
+        <div class="name-block" aria-label="Yaqi Wang 王雅琪">
+          <span class="initials" aria-hidden="true">YW</span>
+          <strong>Yaqi Wang</strong>
+          <span lang="zh-CN">王雅琪</span>
+        </div>
+        <div class="profile-details">
+          <p><strong data-i18n="name">王雅琪 / Yaqi Wang</strong></p>
+          <p data-i18n="role">博士研究生（2024 年入学）</p>
+          <p><a href="https://www.neu.edu.cn/" target="_blank" rel="noopener noreferrer" data-i18n="university">东北大学，中国</a></p>
+          <p><span data-i18n="focusLabel">研究方向：</span><span data-i18n="focus">学习型索引、度量空间相似性检索、数据管理</span></p>
+          <p><span data-i18n="emailLabel">邮箱：</span><a href="mailto:wangyq@stumail.neu.edu.cn">wangyq@stumail.neu.edu.cn</a></p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Site Navigator">
+        <strong data-i18n="navigation">网站导航：</strong>
+        <span>[<a href="#bio" data-i18n="bioTitle">个人简介</a>]</span>
+        <span>[<a href="#news" data-i18n="newsTitle">近期动态</a>]</span>
+        <span>[<a href="#research" data-i18n="researchTitle">研究方向</a>]</span>
+        <span>[<a href="#publications" data-i18n="papersTitle">论文</a>]</span>
+        <span>[<a href="#patents" data-i18n="patentsTitle">授权发明专利</a>]</span>
+        <span>[<a href="#ongoing" data-i18n="ongoingTitle">在研工作</a>]</span>
+        <span>[<a href="#contact" data-i18n="contactTitle">联系方式</a>]</span>
+        <span class="language-control">[<button id="language" type="button" aria-label="Switch to English">English</button>]</span>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="bio">
+        <h2 data-i18n="bioTitle">个人简介</h2>
+        <p data-i18n-html="bio1">我是王雅琪，现为<strong>东北大学博士研究生</strong>，于 2024 年入学。我的研究聚焦于<strong>学习型索引与度量空间相似性检索</strong>，探索学习模型与传统索引结构的融合方法，以提高检索效率并降低存储和维护开销。</p>
+        <p data-i18n="bio2">我的研究从一维有序数据的索引构建与动态更新，逐步拓展至一般度量空间中的相似性检索。目前关注数据分布、查询工作负载与索引组织之间的关系，以及查询感知的索引优化、不相交节点组织和多度量空间索引。</p>
+      </section>
+      <section id="news">
+        <h2 data-i18n="newsTitle">近期动态</h2>
+        <ul class="news-list">
+          <li><strong>[2026]</strong> <span data-i18n-html="news1">论文 <a href="https://doi.org/10.1145/3786665" target="_blank" rel="noopener noreferrer">LM-Tree: A Hybrid Learned Index for Similarity Search in Metric Spaces</a> 发表于 <em>Proceedings of the ACM on Management of Data</em>，并列入 SIGMOD 2026 接收论文名单。</span></li>
+          <li><strong>[2026.02]</strong> <span data-i18n-html="news2">论文 <a href="https://doi.org/10.1007/978-981-95-5722-6_4" target="_blank" rel="noopener noreferrer">QUEST: Query-Aware Learned Metric Index for Similarity Search</a> 发表于 APWeb-WAIM 2025 论文集（论文集于 2026 年出版）。</span></li>
+          <li><strong>[2025.08]</strong> <span data-i18n-html="news3">论文 <a href="https://doi.org/10.13328/j.cnki.jos.007220" target="_blank" rel="noopener noreferrer">DRAMA：更新分布感知的学习型索引</a> 发表于《软件学报》2025 年第 36 卷第 8 期。</span></li>
+        </ul>
+      </section>
+      <section id="research">
+        <h2 data-i18n="researchTitle">研究方向</h2>
+        <p data-i18n="researchIntro">我主要研究如何利用数据分布和查询负载信息，构建高效、紧凑、易维护的索引结构。</p>
+        <ul>
+          <li data-i18n-html="research1"><strong>学习型索引：</strong>融合轻量学习模型与索引结构，研究数据分布感知的构建方法，以及动态更新过程中的低开销维护。</li>
+          <li data-i18n-html="research2"><strong>度量空间相似性检索：</strong>结合树结构、局部枢轴与学习模型，提高剪枝能力，减少节点访问和距离计算。</li>
+          <li data-i18n-html="research3"><strong>查询感知数据管理：</strong>将查询工作负载融入索引构建、节点组织与枢轴配置，降低实际查询代价。</li>
+        </ul>
+      </section>
+      <section id="publications">
+        <h2 data-i18n="papersTitle">论文</h2>
+        <p class="publication-note" data-i18n="paperNote">已发表论文 7 篇，已录用论文 1 篇，在投论文 1 篇。姓名加粗标示本人。</p>
+        <h3 data-i18n="publishedTitle">已发表论文</h3>
+        <ol class="publication-list" data-works="published">
+          <li id="work-lmtree" value="1"><p><strong>Yaqi Wang</strong>, Bin Wang, Rui Zhu, Wenli Sun, Xiaochun Yang.<br><a class="paper-title" href="https://doi.org/10.1145/3786665" target="_blank" rel="noopener noreferrer">LM-Tree: A Hybrid Learned Index for Similarity Search in Metric Spaces.</a><br><em>SIGMOD 2026；Proc. ACM Manag. Data, 4(1), Article 51, 2026.</em><br><span class="work-labels published">CCF A类会议</span><br><span class="paper-actions">[<a href="https://doi.org/10.1145/3786665" target="_blank" rel="noopener noreferrer">论文</a>] [<button type="button" data-cite="lmtree" aria-label="LM-Tree BibTeX">BibTeX</button>]</span></p></li>
+          <li id="work-chameleon" value="2"><p>Na Guo, <strong>Yaqi Wang</strong>, Wenli Sun, Yu Gu, Jianzhong Qi, Zhenghao Liu, Xiufeng Xia, Ge Yu.<br><a class="paper-title" href="https://doi.org/10.1109/ICDE60146.2024.00329" target="_blank" rel="noopener noreferrer">Chameleon: Towards Update-Efficient Learned Indexing for Locally Skewed Data.</a><br><em>IEEE ICDE 2024, pp. 4316–4328.</em><br><span class="work-labels published">CCF A类会议</span><br><span class="paper-actions">[<a href="https://doi.org/10.1109/ICDE60146.2024.00329" target="_blank" rel="noopener noreferrer">论文</a>] [<a href="https://jianzhongqi.github.io/assets/pdf/ICDE2024_Chameleon.pdf" target="_blank" rel="noopener noreferrer">作者版 PDF</a>] [<button type="button" data-cite="chameleon" aria-label="Chameleon BibTeX">BibTeX</button>]</span></p></li>
+          <li id="work-drama" value="3"><p>郭娜，<strong>王雅琪</strong>，姜皓南，谷峪，夏秀峰。<br><a class="paper-title" href="https://doi.org/10.13328/j.cnki.jos.007220" target="_blank" rel="noopener noreferrer">DRAMA：更新分布感知的学习型索引。</a><br><em>软件学报，2024 网络首发；2025, 36(8): 3769–3786.</em><br><span class="work-labels published">CCF A类期刊</span><br><span class="paper-actions">[<a href="https://doi.org/10.13328/j.cnki.jos.007220" target="_blank" rel="noopener noreferrer">论文</a>] [<button type="button" data-cite="drama" aria-label="DRAMA：更新分布感知的学习型索引。 BibTeX">BibTeX</button>]</span></p></li>
+          <li id="work-tali" value="4"><p>Na Guo, <strong>Yaqi Wang</strong>, Haonan Jiang, Xiufeng Xia, Yu Gu.<br><a class="paper-title" href="https://doi.org/10.3390/math10234507" target="_blank" rel="noopener noreferrer">TALI: An Update-Distribution-Aware Learned Index for Social Media Data.</a><br><em>Mathematics, 2022, 10(23): 4507.</em><br><span class="work-labels published">SCI二区</span><br><span class="paper-actions">[<a href="https://doi.org/10.3390/math10234507" target="_blank" rel="noopener noreferrer">论文</a>] [<button type="button" data-cite="tali" aria-label="TALI BibTeX">BibTeX</button>]</span></p></li>
+          <li id="work-quest" value="5"><p>Hongzhao Liu, <strong>Yaqi Wang</strong>, Bin Wang, Xiaochun Yang, Boce Chu, Jin Zhu.<br><a class="paper-title" href="https://doi.org/10.1007/978-981-95-5722-6_4" target="_blank" rel="noopener noreferrer">QUEST: Query-Aware Learned Metric Index for Similarity Search.</a><br><em>APWeb-WAIM 2025；LNCS 16116, pp. 50–65（论文集出版于 2026）。</em><br><span class="work-labels published">CCF C类会议 · 通讯作者</span><br><span class="paper-actions">[<a href="https://doi.org/10.1007/978-981-95-5722-6_4" target="_blank" rel="noopener noreferrer">论文</a>] [<button type="button" data-cite="quest" aria-label="QUEST BibTeX">BibTeX</button>]</span></p></li>
+          <li id="work-highfreq" value="6"><p>郭娜，孙文礼，<strong>王雅琪</strong>，蔡飞，姜皓南，夏秀峰。<br><span class="paper-title">一种满足动态数据高频读写的高性能学习型索引。</span><br><em>小型微型计算机系统，2024。</em><br><span class="work-labels published">CCF B类期刊</span><br><span class="paper-actions">[<button type="button" data-cite="highfreq" aria-label="一种满足动态数据高频读写的高性能学习型索引。 BibTeX">BibTeX</button>]</span></p></li>
+          <li id="work-magic" value="7"><p>Na Guo, <strong>Yaqi Wang</strong>, Xiufeng Xia.<br><a class="paper-title" href="https://doi.org/10.1109/NGDN61651.2024.10744056" target="_blank" rel="noopener noreferrer">MAGIC: Memory Advanced General Index Compression for Learned Indexes.</a><br><em>6th International Conference on Next Generation Data-driven Networks &amp; Networking and Big Data Forum (NGDN), 2024, pp. 370–374.</em><br><span class="work-labels published">EI会议 · 优秀海报奖</span><br><span class="paper-actions">[<a href="https://doi.org/10.1109/NGDN61651.2024.10744056" target="_blank" rel="noopener noreferrer">论文</a>] [<button type="button" data-cite="magic" aria-label="MAGIC BibTeX">BibTeX</button>]</span></p></li>
+        </ol>
+        <h3 data-i18n="acceptedTitle">已录用论文</h3>
+        <ol class="publication-list" data-works="accepted">
+          <li id="work-core" value="8"><p>Dong ZF, Zong CY, Yang XC, Wang B, Chu BC, <strong>Wang YQ</strong>, Zhu HJ.<br><a class="paper-title" href="https://doi.org/10.1109/TKDE.2026.3702049" target="_blank" rel="noopener noreferrer">Query Refinement for Radius-Bounded Core Queries.</a><br><em>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2026.</em><br><span class="work-labels accepted">CCF A类期刊 · 已录用待发表</span><br><span class="paper-actions">[<a href="https://doi.org/10.1109/TKDE.2026.3702049" target="_blank" rel="noopener noreferrer">论文</a>] [<button type="button" data-cite="core" aria-label="Query Refinement for Radius-Bounded Core Queries. BibTeX">BibTeX</button>]</span></p></li>
+        </ol>
+        <h3 data-i18n="submittedTitle">在投论文</h3>
+        <ol class="publication-list" data-works="submitted">
+          <li id="work-lmplus" value="9"><p><strong>Yaqi Wang</strong>, Bin Wang, Rui Zhu, Wenli Sun, Xiaochun Yang.<br><span class="paper-title">LM+-Tree: A Query-aware Hybrid Learned Index for Similarity Search in Metric Spaces.</span><br><em>SIGMOD 2027（在投）。</em><br><span class="work-labels submitted">CCF A类会议 · 在投</span></p></li>
+        </ol>
+      </section>
+      <section id="patents">
+        <h2 data-i18n="patentsTitle">授权发明专利</h2>
+        <p class="publication-note" data-i18n="patentsIntro">以下 2 项为已授权的中国发明专利，列出申请号及相关日期。</p>
+        <ol class="publication-list" data-works="patents">
+          <li id="work-patent-update" value="10"><p>郭娜，<strong>王雅琪</strong>，姜皓南，夏秀峰，安云哲，周大海。<br><span class="paper-title">一种面向更新分布的学习索引模型。</span><br><em>中国；申请号：202211467816.6；2022-11-22。</em><br><span class="work-labels patents">授权发明专利</span><br><span class="paper-actions">[<button type="button" data-copy-work="patent-update">复制条目</button>]</span></p></li>
+          <li id="work-patent-lazy" value="11"><p>郭娜，孙文礼，<strong>王雅琪</strong>，夏秀峰，安云哲，周大海。<br><span class="paper-title">基于分布转换模型和懒惰内存清理策略的学习型索引模型。</span><br><em>中国；申请号：202310523511.0；2023-08-08。</em><br><span class="work-labels patents">授权发明专利</span><br><span class="paper-actions">[<button type="button" data-copy-work="patent-lazy">复制条目</button>]</span></p></li>
+        </ol>
+      </section>
+      <section id="ongoing">
+        <h2 data-i18n="ongoingTitle">在研工作</h2>
+        <p data-i18n-html="ongoingIntro">围绕博士课题<strong>“面向度量空间的学习型索引研究”</strong>，我正在探索以下问题：</p>
+        <ul>
+          <li data-i18n-html="ongoing1"><strong>LM⁺-Tree：</strong>将查询工作负载融入混合学习型度量索引的构建、查询与维护。</li>
+          <li data-i18n-html="ongoing2"><strong>不相交节点组织：</strong>研究对象覆盖与节点重叠之间的关系，减少查询过程中的无效访问。</li>
+          <li data-i18n-html="ongoing3"><strong>多度量空间索引：</strong>面向多种距离关系，探索索引组织与检索策略的协同优化。</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2 data-i18n="contactTitle">联系方式</h2>
+        <p data-i18n="contactIntro">欢迎交流学习型索引、相似性检索与数据管理相关问题。</p>
+        <p><span data-i18n="emailLabel">邮箱：</span><a href="mailto:wangyq@stumail.neu.edu.cn">wangyq@stumail.neu.edu.cn</a> <span class="copy-wrapper">[<button id="copy-email" type="button" data-i18n="copyEmail">复制邮箱</button>]</span></p>
+      </section>
+    </main>
+    <footer><span>© 2026 Yaqi Wang</span><span data-i18n="updated">更新于 2026 年 10 月</span><a href="#top" data-i18n="backTop">返回顶部</a></footer>
+  </div>
+  <dialog id="citation-dialog" aria-labelledby="citation-heading"><div class="dialog-top"><h2 id="citation-heading">BibTeX</h2><button id="close-citation" type="button" aria-label="关闭引用">×</button></div><pre id="citation-text" tabindex="0"></pre><div class="dialog-actions"><button id="copy-citation" type="button" data-i18n="copyCitation">复制引用</button><button id="done-citation" type="button" data-i18n="close">关闭</button></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
